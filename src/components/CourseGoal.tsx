@@ -6,10 +6,14 @@ import type { FC, PropsWithChildren } from "react";
 //     onDelete: (id : number) => void;
 // }
 
-type CourseGoalProps  = PropsWithChildren<{title : string, onDelete: (id: number)=> void}>
+type CourseGoalProps  = PropsWithChildren<
+    {
+        id: number;
+        title : string; 
+        onDelete: (id: number)=> void
+    }>
 
-const CourseGoal : FC<CourseGoalProps> = ({title, children, onDelete}) => {
-    const id = 3
+const CourseGoal : FC<CourseGoalProps> = ({title,id, children, onDelete}) => {
     return(
         <article>
             <div>
