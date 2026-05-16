@@ -15,7 +15,7 @@ type CourseGoalProps  = PropsWithChildren<
 
 const CourseGoal : FC<CourseGoalProps> = ({title,id, children, onDelete}) => {
     return(
-        <article>
+        <article> {/* Self-contained, independently reusable content */}
             <div>
                 <h1>{title}</h1>
                 {children}

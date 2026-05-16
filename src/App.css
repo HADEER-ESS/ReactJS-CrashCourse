@@ -37,6 +37,34 @@
   color: #f5f0d3;
 }
 
+.infobox {
+  border: 2px solid;
+  border-radius: 32px;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.infobox-hint {
+  font-size: 2rem;
+  color: aqua;
+}
+
+.infobox-warning {
+  font-size: 2rem;
+  color:darkorange;
+}
+
+.infobox-text {
+  color: aqua;
+  text-align: center;
+}
+
+.infobox-warning-text {
+  color: darkorange;
+  text-align: center;
+}
+
 header {
   display: flex;
   flex-direction: column;
